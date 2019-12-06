@@ -13,22 +13,21 @@ npm install --save @react-corekit/use-interval
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import { useMyHook } from '@react-corekit/use-interval'
+import { useInterval } from "@react-corekit/use-interval";
 
-const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>{example}</div>
-  )
-}
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  useInterval(() => {
+    setCount(count + 1);
+  }, 1000);
+
+  return <h1>{count}</h1>;
+};
 ```
 
 ## License
 
 MIT © [glongh](https://github.com/glongh)
-
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
