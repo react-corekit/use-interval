@@ -1,12 +1,15 @@
-import React from 'react'
-import { useMyHook } from '@react-corekit/use-interval'
+import React, { Component, useState } from "react";
+
+import { useInterval } from "@react-corekit/use-interval";
 
 const App = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
-}
-export default App
+  const [count, setCount] = useState(0);
+
+  useInterval(() => {
+    setCount(count + 1);
+  }, 1000);
+
+  return <h1>{count}</h1>;
+};
+
+export default App;
