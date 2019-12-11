@@ -48,6 +48,8 @@ const Counter = () => {
 };
 ```
 
+> Visit: https://react-corekit.github.io/use-interval/ for a minimalistic live demo.
+
 ## Additional documentation
 
 [Window/GlobalScope setInterval Reference](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
