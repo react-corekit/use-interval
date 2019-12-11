@@ -1,15 +1,15 @@
 {
   "name": "@react-corekit/use-interval-example",
-  "homepage": "https://glongh.github.io/@react-corekit/use-interval",
+  "homepage": "https://react-corekit/use-interval",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@react-corekit/use-interval": "link:..",
     "prop-types": "^15.6.2",
     "react": "link:../node_modules/react",
     "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1",
-    "@react-corekit/use-interval": "link:.."
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +22,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
